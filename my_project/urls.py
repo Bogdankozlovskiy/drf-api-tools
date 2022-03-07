@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.schemas import get_schema_view
+from my_project.schemas import swagger_schema_view
 
 
 urlpatterns = [
@@ -16,5 +17,8 @@ urlpatterns = [
             description="A sample API for learning DRF",
             version="1.0.0"
         ),
-        name='openapi-schema'),
+        name='openapi-schema'
+    ),
+    path('swagger/', swagger_schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('redoc/', swagger_schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]

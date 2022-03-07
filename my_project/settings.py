@@ -49,8 +49,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    'drf_yasg',
 ]
 #  python manage.py generateschema > openapi-schema.yml
+#  https://github.com/wsvincent/awesome-django
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
