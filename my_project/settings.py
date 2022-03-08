@@ -107,7 +107,7 @@ REST_FRAMEWORK = {
 }
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 1
-
+REST_USE_JWT = True
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
