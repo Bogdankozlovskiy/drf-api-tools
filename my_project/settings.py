@@ -56,6 +56,7 @@ INSTALLED_APPS = [
 ]
 #  python manage.py generateschema > openapi-schema.yml
 #  https://github.com/wsvincent/awesome-django
+#  https://djangopackages.org/
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
